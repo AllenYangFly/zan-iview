@@ -4,6 +4,9 @@ const IviewController = {
     },
     async getRootIndexHtml(ctx) {
         await ctx.render('www/viewroot/index.html');
+    },
+    async getZanIviewHtml(ctx) {
+        await ctx.render('www/zaniview/index.html');
     }
 };
 

@@ -19,5 +19,7 @@ io.on('connection', socket => {
 
 router.get('/iview', IviewController.getIndexHtml);
 router.get('/iviewroot', IviewController.getRootIndexHtml);
+router.get('/zaniview', IviewController.getZanIviewHtml);
+
 
 module.exports = router;
