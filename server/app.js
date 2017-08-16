@@ -7,7 +7,8 @@ const config = {
     KEYS: ['zan-key', 'zan-secret'],
     VIEW_EXTRA_DATA: {
         url: YOUZAN_URL
-    }
+    },
+    STATIC_PATH: '../static/'
 };
 
 let zan = new Zan(config);

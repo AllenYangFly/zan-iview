@@ -1,0 +1,177 @@
+body,html,.wrap-page {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    min-width: 960px;
+    min-height: 540px;
+    position: relative;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap-page {
+  background-image: url('https://b.yzcdn.cn/v2/youzan/iview/particles_bg-white.png');
+  background-color: #1e2a31;
+}
+
+.wrap-page .cricle-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 540px;
+    width: 960px;
+    .cricle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -133px;
+        margin-left: -133px;
+        transform-origin: 50% 50%;
+        width: 266px;
+        height: 266px;
+        -webkit-animation: innerCircle 8s linear infinite;
+                    animation: innerCircle 8s linear infinite;
+    }
+}
+
+
+.open-screen .CodeMirror{
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: -400px;
+}
+
+
+.on {
+    width: 60px;
+    height: 60px;
+ 
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -30px;
+     
+    .double-bounce1, .double-bounce2 {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #4291e1;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+       
+      -webkit-animation: bounce 2.0s infinite ease-in-out;
+      animation: bounce 2.0s infinite ease-in-out;
+    }
+     
+    .double-bounce2 {
+      -webkit-animation-delay: -1.0s;
+      animation-delay: -1.0s;
+    }
+     
+    @-webkit-keyframes bounce {
+      0%, 100% { -webkit-transform: scale(0.0) }
+      50% { -webkit-transform: scale(1.0) }
+    }
+     
+    @keyframes bounce {
+      0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+      } 50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+      }
+    }
+
+}   
+
+
+.off {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -30px;
+
+    background: #28546d;
+}
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.loader {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: #f6f9f7;
+    text-align: center;
+/* loader页面消失采用渐隐的方式*/
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+
+.loader .loader-content  {
+    position: relative;
+    background-color: #4291e1;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: sk-innerCircle 1s linear infinite;
+            animation: sk-innerCircle 1s linear infinite; 
+}
+.loader .loader-content .sk-inner-circle {
+  display: block;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 8px;
+  top: 5px;
+  left: 5px; 
+}
+
+@-webkit-keyframes sk-innerCircle {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes sk-innerCircle {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.fadeout {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
