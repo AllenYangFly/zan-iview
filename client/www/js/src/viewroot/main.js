@@ -8,26 +8,23 @@
             lineNumbers: true,
             mode:"javascript",　
             lineWrapping:false, 
-            theme: "lesser-dark"
+            theme: "pastel-on-dark"
          });
         
-        var socket = io.connect('ws://127.0.0.1:3000');
+        var socket = io.connect('ws://127.0.0.1:8202');
 
         var locked = false;
 
         editor.on("change", function (Editor, changes) { 
-            console.log(locked);
             if( !locked ) {
                 socket.emit('rootChange', {code:editor.getValue()});
             }
         });
 
         socket.on('rootMessage',function(data){     
-            console.log('rootSet'+ data);   
             editor.setValue(data); 
 
             throttle(function() {
-                console.log(locked);
                 locked = false;
                 editor.setOption("readOnly", false); 
             },1000)();

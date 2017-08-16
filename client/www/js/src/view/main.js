@@ -14,32 +14,27 @@ window.onload = function(){
         
         var locked = false;
 
-        var socket = io.connect('ws://127.0.0.1:8201');
+        var socket = io.connect('ws://127.0.0.1:8202');
 
         editor.on("change", function (Editor, changes) {  
-            console.log(locked);
 
             if( !locked ) {
                 socket.emit('change', {code:editor.getValue()}); 
             }
 
             throttle(function() {
-                console.log(locked);
                 locked = false;
                 editor.setOption("readOnly", false); 
             },1000)();
         });
 
         socket.on('message',function(data){        
-            console.log(data);
-            console.log(locked);
             if( locked ) {
                 editor.setValue(data); 
             }
         });
 
         socket.on('isRootEditing',function(data){  
-            console.log('isRootEditing');      
             editor.setOption("readOnly", true); 
             locked = true;
         });
