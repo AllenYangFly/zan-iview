@@ -1,0 +1,26 @@
+{
+  "name": "zan-iview",
+  "version": "0.0.1",
+  "description": "A web interview application, developed by yangyazhou.",
+  "dependencies": {
+    "@youzan/youzan-url": "0.1.0",
+    "@youzan/zan": "0.3.3",
+    "koa-router": "7.0.1",
+    "lodash": "4.17.4",
+    "react": "15.0.2",
+    "react-dom": "15.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.23.0",
+    "babel-polyfill": "6.16.0",
+    "babel-preset-env": "1.2.1",
+    "babel-register": "6.18.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "yangyazhou, front-end developer at youzanyun",
+  "license": "MIT"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "node-starter",
+    "version": "0.0.1",
+    "description": "node 脚手架 API 文档",
+    "title": "API Document",
+    "url": "http://node-starter.qima-inc.com",
+    "header": {
+        "title": "API Document Header",
+        "filename": "./apidoc_header.md"
+    },
+    "footer": {
+        "title": "API Document Footer",
+        "filename": "apidoc_footer.md"
+    },
+    "template": {
+        "withCompare": true,
+        "withGenerator": true
+    }
+}

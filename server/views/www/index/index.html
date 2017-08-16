@@ -1,0 +1,21 @@
+{% extends './base.html' %}
+
+{% block page_style %}
+	{% if env === 'development' %}
+	    <link rel="stylesheet" href="/local/www/styles/pages/index/main.css">
+	{% else %}
+		<link rel="stylesheet" href="{{cdnPrefix}}{{version_css['static/build/www/styles/pages/index/main']}}">
+	{% endif %}
+{% endblock %}
+
+{% block page_content %}
+<div id="app"></div>
+{% endblock %}
+
+{% block page_script %}
+    {% if env === 'development' %}
+        <script src="/local/www/js/src/index.js" charset="utf-8"></script>
+    {% else %}
+        <script src="{{cdnPrefix}}{{version_js['www/js/src/index']}}" charset="utf-8"></script>
+    {% endif %}
+{% endblock %}

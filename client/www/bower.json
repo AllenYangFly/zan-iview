@@ -1,0 +1,21 @@
+{
+  "name": "www",
+  "version": "0.0.0",
+  "authors": [
+    "kk <kk@youzan.com>"
+  ],
+  "description": "www bower components",
+  "keywords": [
+    "www"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

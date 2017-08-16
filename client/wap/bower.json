@@ -1,0 +1,21 @@
+{
+  "name": "wap",
+  "version": "0.0.0",
+  "authors": [
+    "kk <kk@youzan.com>"
+  ],
+  "description": "wap bower components",
+  "keywords": [
+    "wap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
