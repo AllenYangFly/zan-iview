@@ -7,9 +7,10 @@
     "@youzan/zan": "0.3.3",
     "koa-router": "7.0.1",
     "lodash": "4.17.4",
-    "react": "15.0.2",
-    "react-dom": "15.0.2",
-    "socket.io": "^2.0.3"
+    "react": "15.5.x",
+    "react-dom": "15.5.x",
+    "socket.io": "^2.0.3",
+    "zent": "^3.4.6"
   },
   "devDependencies": {
     "babel-cli": "6.23.0",

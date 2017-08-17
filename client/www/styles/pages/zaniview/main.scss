@@ -1,0 +1,53 @@
+@import '~zent/css/index.css';
+
+html,body {
+  background: #f5f6f8;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+.wrap-container {
+  margin: 0 auto;
+  width: 960px;
+  .page-create__hd {
+    position: relative;
+    height: 42px;
+    margin: 20px 0 25px;
+    .page-create__logo {
+      width: 127px;
+      height: 48px;
+      background: url(https://img.yzcdn.cn/public_files/2016/11/29/e585d313de3013698ad95968e2456240.png) no-repeat;
+      background-size: 72px 25px;
+      background-position: left bottom;
+    }
+  }
+  .table-content {
+    border: 1px solid #e5e5e5;
+    border-box: box-sizing;
+    background: #fff;
+    .page-create__title {
+      position: relative;
+      border-bottom: 1px solid #eee;
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      background: #f8f8f8;
+      .create__room {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+      }
+    }
+  }
+  .table-list {
+    background-color: #fff;
+  }
+}
+
+
+.zent-datetime-picker-popover {
+  position: absolute;
+  z-index: 2000;
+}
